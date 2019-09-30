@@ -15,9 +15,29 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-
+        <style>
+            .main{
+                left: 50%;
+            }
+            .response{
+                left: 50%;
+                top: 50%;
+            }
+        </style>
     </head>
     <body>
-
+        <div class = 'main'>
+            <fieldset>
+                <label for = "width">Enter the Width of your field:</label>
+                <input id="width" type="number" minlength="1" maxlength="12" value="0">
+            </fieldset>
+            <fieldset>
+                <label for = "length">Enter the Width of your field:</label>
+                <input id="length" type="number" minlength="1" maxlength="12" value="0">
+            </fieldset>
+        </div>
+        <div class = 'response'>
+            <p id="result"></p>
+        </div>
     </body>
 </html>
