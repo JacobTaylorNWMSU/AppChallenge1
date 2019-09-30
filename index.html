@@ -17,34 +17,49 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
         <style>
             .main{
-                left: 50%;
+                position: initial;
+                text-align: center;
             }
-            .btn{
+            .calculator{
+                text-align: center;
+            }
+            .button{
+                position: absolute;
+                padding: 0;
                 left: 50%;
             }
             .response{
-                left: 50%;
-                top: 50%;
+                position: initial;
+                text-align: center;
             }
         </style>
     </head>
     <body>
+
+        <h1 align = "middle">Area Calculator</h1>
+
         <div class = 'main'>
             <fieldset>
-                <label for = "width">Enter the Width of your field:</label>
-                <input id="width" type="number" minlength="1" maxlength="12" value="0">
+                <label for = "width">Enter the Width of your field (max length 5 digits):</label><br>
+                <input id="width" type="number" minlength="1" maxlength="5" value="0">
             </fieldset>
             <fieldset>
-                <label for = "length">Enter the Width of your field:</label>
-                <input id="length" type="number" minlength="1" maxlength="12" value="0">
+                <label for = "length">Enter the Width of your field (max length 5 digits):</label><br>
+                <input id="length" type="number" minlength="1" maxlength="5" value="0">
             </fieldset>
         </div>
-        <div class="btn">
+
+        <div class = "calculator">
+            <br>
             <button id="calculate">calculate</button>
         </div>
+
         <div class = 'response'>
+            <br>
             <p id="result"></p>
         </div>
+
         <script src="main.js"></script>
+
     </body>
 </html>

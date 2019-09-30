@@ -6,7 +6,7 @@ const updateWithArea = async (event) => {
       const regex = /[^a-zA-Z_]/g
       const i = parseInt(document.querySelector('#width').value)
       const j = parseInt(document.querySelector('#length').value)
-      const ans = `Your area is ${area(i, j)}.`
+      const ans = `Your area is ${area(i, j)} ft^2.`
       document.querySelector('#result').innerHTML = ans
     }
   }
